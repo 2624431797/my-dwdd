@@ -1,0 +1,286 @@
+@charset "utf-8";
+/* 弹出框 */
+.textcode_alert{
+    display: none;
+    position: absolute;
+    width: 380px;
+    height: 200px;
+    background: url('../images/skin_bg.png') no-repeat;
+    top: 50%;
+    left: 440px;
+    box-shadow: #000 0px 2px 14px;
+}
+.textcode_alerttop{
+    position: relative;
+    width: 380px;
+    height: 60px;
+    background: url('../images/skin_title.png') no-repeat;
+    background-position: 27px 35px;
+}
+.textcode_alerttop p{
+    height: 28px;
+    line-height: 27px;
+    padding: 30px 0 0 60px;
+    color: #000;
+    font-size: 16px;
+}
+.textcode_alerttop a{
+    position: absolute;
+    display: block;
+    top: 6px;
+    right: 8px;
+    font-size: 22px;
+    color: #757272;
+}
+.textcode_alert div:nth-child(2){
+    width: 380px;
+    height: 60px;
+    padding: 20px 25px;
+    text-align: center;
+    line-height: 60px;
+}
+.textcode_alert div:nth-child(2) p{
+    line-height: 20px;
+    font-family: "微软雅黑";
+}
+.textcode_alert div:nth-child(3){
+    width: 380px;
+    height: 80px;
+    padding: 30px 35px 10px 0px;
+}
+.textcode_alert div:nth-child(3) button{
+    display: inline-block;
+    float: right;
+    padding: 0px 20px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    color: #fff;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    border: 0px;
+    cursor: pointer;
+    background-color: #d31920;
+    border: 0px;
+    outline: 0px;
+}
+/* 头部 */
+.header{
+    background: #fff;
+}
+header{
+    width: 1240px;
+    height: 100px;
+    margin: 0 auto;
+}
+.header_left{
+    float: left;
+}
+.header_left a{
+    display: inline-block;
+}
+.header_left span:nth-of-type(1){
+    display: inline-block;
+    width: 2px;
+    height: 44px;
+    vertical-align: middle;
+    background-color: #ccc;
+    margin: 0 18px
+}
+.header_left span:nth-of-type(2){
+    display: inline-block;
+    font-size: 22px;
+    color: #999;
+    vertical-align: middle
+}
+.header_right{
+    width: 190px;
+    height: 100px;
+    float: right;
+}
+.header_right i{
+    display: block;
+    width: 19px;
+    height: 19px;
+    float: left;
+    margin-top: 40px;
+    background: url('../images/f15.png') no-repeat;
+}
+.header_right p{
+    color: #666;
+    font-size: 14px;
+    float: right;
+    line-height: 100px;
+}
+/* 内容 */
+.main{
+    background-color: #262626;
+}
+main{
+    width: 1240px;
+    height: 600px;
+    background: url('../images/login_background1.jpg')
+}
+.main_login{
+    width: 400px;
+    float: right;
+    margin-top: 30px;
+    margin-right: 50px;
+    padding: 0 30px;
+    background: #fff;
+}
+/* 内容头部 */
+.login_tit{
+    height: 20px;
+    padding: 35px 0;
+    font-size: 20px; 
+    line-height: 20px;
+    text-align: center;
+    color: #000;
+}
+/* 内容 */
+.login_con{
+    width: 340px;
+    height: 400px;
+}
+    /* 用户框 */
+.username{
+    width: 340px;
+    margin-bottom: 16px;
+}
+#username{
+    width: 340px;
+    height: 50px;
+    padding: 4px 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+}
+#username_alert{
+    display: none;
+    width: 340px;
+    height: 44px;
+    line-height: 44px;
+}
+#username_alert p{
+    font-size: 14px;
+    color: #f62b0f;
+}
+    /* 验证码 */
+.textcode{
+    width: 340px;
+    height: 50px;
+    margin-bottom: 16px;
+}
+#textcode{
+    float: left;
+    width: 182px;
+    height: 48px;
+    padding: 4px 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+}
+.textcode_div{
+    float: right;
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    background-color: #f2f2f2;
+}
+#textcode_div{
+    font-size: 14px;
+    font-weight: bold;
+}
+    /* 密码框 */
+.password{
+    width: 340px;
+    margin-bottom: 16px;
+    
+}
+#password{
+    width: 340px;
+    height: 50px;
+    padding: 4px 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+}
+#password_alert{
+    display: none;
+    width: 340px;
+    height: 44px;
+    line-height: 44px;
+}
+#password_alert p{
+    font-size: 14px;
+    color: #999;
+}
+    /* 确认密码 */
+.repassword{
+    width: 340px;
+    margin-bottom: 20px;
+}
+#repassword{
+    width: 340px;
+    height: 50px;
+    padding: 4px 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+}
+#repassword_alert{
+    display: none;
+    width: 340px;
+    height: 44px;
+    line-height: 44px;
+}
+#repassword_alert p{
+    font-size: 14px;
+    color: #f62b0f;
+}
+    /* 登录 */
+#submit{
+    width: 338px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background: #333;
+    font-size: 18px;
+    border: none;
+    margin-bottom: 20px;
+    transition: all linear 0.5s;
+    cursor: pointer;
+}
+#submit:hover{
+    background: #a60000;
+}
+.login_bot{
+    height: 14px;
+    line-height: 14px;
+    padding-bottom: 30px;
+} 
+.login_bot label{
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+.login_bot p{
+    display: inline-block;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 22px;
+}
+.login_bot a:nth-of-type(1){
+    font-size: 14px;
+    color: #000;
+    line-height: 22px;
+}
+.login_bot a:nth-of-type(2){
+    float: right;
+    font-size: 14px;
+    color: #ff9900;
+    line-height: 22px;
+}
+

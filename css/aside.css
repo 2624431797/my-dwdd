@@ -1,0 +1,544 @@
+@charset "utf-8";
+/* 侧边栏 */
+.aside{
+    position: fixed;
+    width: 335px;
+    height: 100%;
+    top: 0;
+    right: -300px;
+    z-index: 10;
+}
+.aside_box{
+    position: absolute;
+    width: 335px;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+    /* 图标 */
+.aside_icon{
+    width: 35px;
+    height: 100%;
+    float: left;
+}
+    /* 图标上 */
+.aside_icontop{
+    position: absolute;
+    width: 35px;
+    height: 234px;
+    top: 30%;
+    left: 0px;
+}
+.asd_icon_div{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 10px;
+    right: -8px;
+    line-height: 16px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-family: "\5b8b\4f53";
+    z-index: 9;
+}
+.asd_ic_cart{
+    width: 35px;
+    height: 35px;
+    margin-bottom: 1px;
+    border-radius: 5px;
+    background-color: #333;
+}
+.asd_ic_cart a{
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: url('../images/0.png') no-repeat -88px -156px;
+}
+.asd_ic_cart:hover{
+    background: #c69c6d;
+}
+.asd_ic_cart:hover a{
+    background: url('../images/0.png') no-repeat -88px -121px;
+}
+.asd_ic_pro{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 1px;
+    border-radius: 5px;
+    background-color: #333;
+}
+.asd_ic_pro a{
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: url('../images/0.png') no-repeat -140px -154px;
+}
+.asd_ic_pro:hover{
+    background: #c69c6d;
+}
+.asd_ic_pro:hover a{
+    background: url('../images/0.png') no-repeat -141px -124px;
+}
+.asd_pro_tip{
+    display: none;
+    position: absolute;
+    width: 99px;
+    height: 33px;
+    right: 35px;
+    top: 0;
+    line-height: 33px;
+    text-align: center;
+    color: #363636;
+    background-color: #fff;
+    border: 1px solid #e4e4e4;
+    border-right: none;
+    font-family: "微软雅黑";
+    font-size: 14px 
+}
+.asd_ic_like{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 1px;
+    border-radius: 5px;
+    background-color: #333;
+}
+.asd_ic_like a{
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: url('../images/0.png') no-repeat -202px -155px;
+}
+.asd_ic_like:hover{
+    background: #c69c6d;
+}
+.asd_ic_like:hover a{
+    background: url('../images/0.png') no-repeat -203px -126px;
+}
+.asd_like_tip{
+    display: none;
+    position: absolute;
+    width: 99px;
+    height: 33px;
+    right: 35px;
+    top: 0;
+    line-height: 33px;
+    text-align: center;
+    color: #363636;
+    background-color: #fff;
+    border: 1px solid #e4e4e4;
+    border-right: none;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+.asd_ic_kefu{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 1px;
+    border-radius: 5px;
+    background-color: #333;
+}
+.asd_ic_kefu a{
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: url('../images/0.png') no-repeat -258px -125px;
+}
+.asd_ic_kefu:hover{
+    background: #c69c6d;
+}
+.asd_kefu_tip{
+    display: none;
+    position: absolute;
+    width: 99px;
+    height: 33px;
+    right: 35px;
+    top: 0;
+    line-height: 33px;
+    text-align: center;
+    color: #363636;
+    background-color: #fff;
+    border: 1px solid #e4e4e4;
+    border-right: none;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+    /* 图标下 */
+.aside_iconbot{
+    position: absolute;
+    width: 35px;
+    height: 140px;
+    bottom: 35px;
+    left: 0px;  
+}
+.asd_ic_wechat{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 1px;
+    border-radius: 5px;
+    background-color: #333;
+}
+.asd_ic_wechat a{
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: url('../images/0.png') no-repeat -312px -155px;
+}
+.asd_ic_wechat:hover{
+    background: #c69c6d;
+}
+.asd_ic_wechat:hover a{
+    background: url('../images/00.png') no-repeat -475px -52px;
+}
+.asd_wechat_tip{
+    display: none;
+    position: absolute;
+    width: 124px;
+    height: 135px;
+    top: 0px;
+    right: 35px;
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    border-right: 0;
+    cursor: default;
+}
+.asd_ic_fankui{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 1px;
+    border-radius: 5px;
+    background-color: #333;
+}
+.asd_ic_fankui a{
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: url('../images/0.png') no-repeat -374px -157px;
+}
+.asd_ic_fankui:hover{
+    background: #c69c6d;
+}
+.asd_ic_fankui:hover a{
+    background: url('../images/00.png') no-repeat -124px -52px;
+}
+.asd_fankui_tip{
+    display: none;
+    position: absolute;
+    width: 99px;
+    height: 33px;
+    right: 35px;
+    top: 0;
+    line-height: 33px;
+    text-align: center;
+    color: #363636;
+    background-color: #fff;
+    border: 1px solid #e4e4e4;
+    border-right: none;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+.asd_ic_pho{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 1px;
+    border-radius: 5px;
+    background-color: #333;
+}
+.asd_ic_pho a{
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: url('../images/01.png') no-repeat 10px 9px;
+}
+.asd_ic_pho:hover{
+    background: #c69c6d;
+}
+.asd_ic_pho:hover a{
+    background: url('../images/01.png') no-repeat 10px -19px;
+}
+.asd_pho_tip{
+    display: none;
+    position: absolute;
+    width: 99px;
+    height: 33px;
+    right: 35px;
+    top: 0;
+    line-height: 33px;
+    text-align: center;
+    color: #363636;
+    background-color: #fff;
+    border: 1px solid #e4e4e4;
+    border-right: none;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+.asd_ic_top{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 1px;
+    border-radius: 5px;
+    background-color: #333;
+}
+.asd_ic_top a{
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: url('../images/0.png') no-repeat -437px -153px;
+}
+.asd_ic_top:hover{
+    background: #c69c6d;
+}
+.asd_ic_top:hover a{
+    background: url('../images/00.png') no-repeat -401px -52px;
+}
+.asd_top_tip{
+    display: none;
+    position: absolute;
+    width: 99px;
+    height: 33px;
+    right: 35px;
+    top: 0;
+    line-height: 33px;
+    text-align: center;
+    color: #363636;
+    background-color: #fff;
+    border: 1px solid #e4e4e4;
+    border-right: none;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+    /* 侧边栏内容 */
+.aside_content{
+    width: 298px;
+    height: 100%;
+    float: left;
+    background: #000;
+}
+.aside_info{
+    height: 100%;
+    width: 294px;
+    overflow-x: hidden;
+    margin: 0 auto;
+    background: #fff;
+}
+.aside_bag{
+    position: relative;
+    height: 100%;
+    padding: 0 15px;
+    text-align: center;
+    color: #555555;
+    overflow-x: auto;
+    overflow-y: scroll;
+    zoom: 1;
+}
+    /* 头部 */
+.asd_bag_tit{
+    position: relative;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    text-align: left;
+    margin-top: 8px;
+    color: #555555;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #cbcbcb;
+}
+.asd_bag_tit b{
+    position: absolute;
+    display: block;
+    width: 11px;
+    height: 11px;
+    right: 0;
+    top: 13px;
+    cursor: pointer;
+    z-index: 9999;
+    background: url('../images/00.png') no-repeat -8px -187px;
+}
+     /* 内容 */
+.asd_bag_con{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+        /* 无商品 */
+.asd_bag_img{
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    text-align: center;
+}
+.asd_bag_img img{
+    width: 150px;
+    height: 223px;
+    margin: 20px auto;
+}
+.asd_bag_img p{
+    font-size: 16px;
+    color: #333;
+    line-height: 32px;
+}
+        /* 有商品 */
+        /* 上 */
+.asd_bag_pro{
+    width: 100%;
+    text-align: center;
+}
+.pro_goods{
+    width: 100%;
+    padding: 20px 0px;
+    overflow: hidden;
+    border-bottom: 1px solid #cbcbcb;
+}
+.pro_goods_top{
+    width: 250px;
+    height: 50px;
+}
+.pro_go_pic{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-left: 5px;
+    border: 1px solid #999;
+}
+.pro_go_tit{
+    max-width: 80px;
+    height: 50px;
+    text-align: left;
+    line-height: 22px;
+    font-size: 12px;
+    color: #333;
+    float: left;
+    margin-left: 10px;
+}
+.pro_go_num{
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #333;
+    float: left;
+    margin-left: 10px;
+}
+        /* 中 */
+.pro_goods_mid{
+    width: 250px;
+    height: 45px;
+}
+.pro_go_pri{
+    width: 98px;
+    height: 45px;
+    color: #c90002;
+    line-height: 45px;
+    font-family: "微软雅黑";
+    float: left;
+    margin-left: 20px;
+}
+.pro_addnum{
+    display: block;
+    width: 30px;
+    height: 25px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+    background: #c8a985;
+    float: left;
+    margin-top: 10px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.pro_rdunum{
+    display: block;
+    width: 30px;
+    height: 25px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+    background: #c8a985;
+    float: left;
+    margin-top: 10px;
+    cursor: pointer;
+}
+        /* 下 */
+.pro_goods_bot{
+    width: 250px;
+    height: 30px;
+}
+.pro_buy{
+    width: 60px;
+    height: 30px;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+    color: #c8a985;
+    margin-left: 40px;
+    border: 1px solid #c8a985;
+    background: #fff;
+    cursor: pointer;
+}
+.pro_del{
+    width: 60px;
+    height: 30px;
+    float: right;
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+    color: #c8a985;
+    margin-right: 40px;
+    border: 1px solid #c8a985;
+    background: #fff;
+    cursor: pointer;
+}
+    /* 结算 */
+.asd_bag_money{
+    position: fixed;
+    width: 250px;
+    height: 100px;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 25;
+}
+.money_top{
+    width: 250px;
+    height: 40px;
+}
+.money_top p:nth-child(1){
+    margin: 10px 0 0 10px;
+    float: left;
+}
+.money_top p:nth-child(2){
+    margin: 10px 10px 0 0;
+    float: right;
+}
+.mon_num{
+    font-size: 14px;
+    color: #333;
+}
+.mon_pri{
+    font-size: 14px;
+    color: #333;
+}
+.monry_bot{
+    display: flex;
+    width: 250px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+#money_btn{
+    width: 100px;
+    height: 30px;
+    background: url('../images/00.png') no-repeat -8px -216px;
+    text-align: center;
+    line-height: 28px;
+    color: #fff;
+    cursor: pointer;
+}
